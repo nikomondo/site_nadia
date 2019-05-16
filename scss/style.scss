@@ -7,7 +7,6 @@ $white: #fff;
 $black: #000000;
 $darken: #232931;
 
-/*$primary: #31de79;*/
 $primary:orange;
 $secondary:red;
 
@@ -29,15 +28,6 @@ $secondary:red;
 }
 
 @mixin gradient-background(){
-/*	background: rgba(159,246,105,1);
-	background: -moz-linear-gradient(-45deg, rgba(159,246,105,1) 0%, rgba(49,222,121,1) 100%);
-	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(159,246,105,1)), color-stop(100%, rgba(49,222,121,1)));
-	background: -webkit-linear-gradient(-45deg, rgba(159,246,105,1) 0%, rgba(49,222,121,1) 100%);
-	background: -o-linear-gradient(-45deg, rgba(159,246,105,1) 0%, rgba(49,222,121,1) 100%);
-	background: -ms-linear-gradient(-45deg, rgba(159,246,105,1) 0%, rgba(49,222,121,1) 100%);
-	background: linear-gradient(135deg, rgba(159,246,105,1) 0%, rgba(49,222,121,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ff669', endColorstr='#31de79', GradientType=1 );
-	*/
 	background:orange ;
 	background: -moz-linear-gradient(-45deg, red 0%, orange 100%);
 	background: -webkit-gradient(left top, right bottom, color-stop(0%, red , color-stop(100%, orange)));
@@ -67,7 +57,7 @@ body {
 	}
 }
 a {
-	transition: .3s all ease;
+	transition: .1s all ease;
 	color: $primary;
 	&:hover, &:focus {
 		text-decoration: none;
@@ -432,13 +422,13 @@ h1, h2, h3, h4, h5,
 	}
 	&.home-slider {
 		position: relative;
-		height: 750px;
+		height: 450px;
 		z-index: 0;
 		.slider-item {
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center center;
-			height: 750px;
+			height: 450px;
 			position: relative;
 			z-index: 0;
 			@include media-breakpoint-down(lg){
